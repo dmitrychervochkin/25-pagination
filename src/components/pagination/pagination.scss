@@ -1,0 +1,58 @@
+.pagination {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.left-btn,
+.right-btn {
+    color: #c4cdd5;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: color 0.2s;
+
+    &:hover {
+        cursor: pointer;
+        color: black;
+    }
+    &.disabled {
+        cursor: not-allowed;
+        background-color: #919eab;
+        &:hover {
+            color: #c4cdd5;
+        }
+    }
+}
+.item,
+.dots {
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: color 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &.current {
+        color: #4200ff;
+        border: 3px solid #4200ff;
+    }
+    &:hover {
+        cursor: pointer;
+        color: #c4cdd5;
+    }
+}
+
+.dots {
+    color: #c4cdd5;
+
+    &:hover {
+        cursor: default;
+        color: #c4cdd5;
+    }
+}
